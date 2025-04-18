@@ -41,7 +41,7 @@ def preprocess_text(text):
 def load_and_preprocess_data():
     try:
         # Try to load the dataset - adjust the path if necessary
-        df = pd.read_csv('C:\\Coding\\Projects\\EmailDetection\\EmailDetection\\emailDataset.csv')
+        df = pd.read_csv('emailDataset.csv')
         data = df.where((pd.notnull(df)), '')
         
         # Convert label to numeric
